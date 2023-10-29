@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <span>{{ognoo}}</span>
+        category page
+        <h2>{{category.name}}</h2>
+        <p>{{category.description}}</p>
+
+        <p>medeenuud</p>
+        {% for article in category.articles.all %}
+            <a href="/article/{{article.id}}">{{article.title}}</a>
+            <p>{{article.content}}</p>
+        {% endfor %}
+    </body>
+</html>

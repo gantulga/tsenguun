@@ -1,0 +1,8 @@
+<html>
+    <body>
+        index page
+        {% for cat in cats %}
+            <a href="/cat/{{cat.id}}"><p>{{cat.name}}</p></a>
+        {% endfor %}
+    </body>
+</html>
